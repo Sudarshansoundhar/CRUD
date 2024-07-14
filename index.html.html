@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            margin-top: 50px;
+        }
+        .logo {
+            width: 150px; /* Adjust size as needed */
+            height: auto;
+        }
+        .title {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        pre {
+            font-size: 1em;
+            white-space: pre-wrap; /* Wrap text in pre */
+            line-height: 1.5;
+        }
+        a {
+            display: block;
+            margin: 10px auto; /* Center align the links */
+            width: fit-content; /* Adjust width to fit content */
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin: 20px auto;
+            max-width: 400px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-box {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-button {
+            padding: 10px;
+            border: 1px solid #007BFF;
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        .centered-image {
+            display: block;
+            margin: 20px auto; /* Center align the image */
+            max-width: 100%; /* Ensure image doesn't exceed container width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Properly align the first three paragraphs */
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="C:\Users\sudar\OneDrive\Pictures\Screenshots\Screenshot 2024-07-12 235546.png" alt="Logo" class="logo">
+        <div class="title">CRUD</div>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search-box" class="search-box" placeholder="Search...">
+        <button onclick="search()" class="search-button">Search</button>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to our Website</h1>
+        <p>
+            Hello everyone! We are thrilled to welcome you to our platform. Our goal is to equip you with essential knowledge and insights
+            that will give you a competitive edge. Whether you're aiming to crack interviews or secure positions in top companies,
+            we're here to guide you every step of the way. Explore our resources on coding, interview strategies, 
+            and career advancement to enhance your skills and achieve your goals. Let's embark on this journey together towards success!
+        </p>
+
+        <h1>What is this about?</h1>
+        <p>
+            Welcome to our innovative platform dedicated to helping students excel in coding, ace job interviews, and stay updated 
+            with the latest in technology. Explore a rich collection of coding tutorials tailored for all levels,
+            from beginners to advanced programmers. Engage with interactive coding exercises to enhance your practical skills.
+        </p>
+
+        <h1>Why choose us?</h1>
+        <p>
+            Our platform is your ultimate destination for mastering coding, crafting compelling resumes, and excelling in interviews. 
+            With a comprehensive curriculum, we offer resources ranging from foundational to advanced coding tutorials and
+            practical exercises. Dive into specialized modules on interview techniques, covering common questions and realistic mock interviews.
+        </p>
+    
+        <a href="RESUME1.html">RESUME</a>
+        <a href="Programming Languages1.html">PROGRAMMING LANGUAGES</a>
+        <a href="Interview1.html">INTERVIEW</a>
+        <a href="Latest Technology1.html">LATEST TECHNOLOGY</a>
+
+        <img src="C:\Users\sudar\OneDrive\Pictures\Screenshots\Screenshot 2024-07-12 235546.png" alt="Image" class="centered-image" height="500" width="500">
+    </div>
+
+    <script>
+        function search() {
+            const query = document.getElementById('search-box').value.toLowerCase();
+            const content = document.querySelectorAll('pre, p, h1, h2');
+
+            content.forEach(element => {
+                if (element.innerText.toLowerCase().includes(query)) {
+                    element.style.display = 'block';
+                } else {
+                    element.style.display = 'none';
+                }
+            });
+        }
+
+        window.embeddedChatbotConfig = {
+            chatbotId: "_BFHt1TWLmEsNIe-MOWyT",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="_BFHt1TWLmEsNIe-MOWyT"
+        domain="www.chatbase.co"
+        defer>
+    </script>
+</body>
+</html>
+
+        
